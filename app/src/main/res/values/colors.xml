@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+    <color name="colorPrimary">#E45A15</color>
+    <color name="colorPrimaryDark">#FE8446</color>
+    <color name="colorAccent">#0C1355</color>
+
+    <color name="main_drawer_list_item_title">#fff</color>
+    <color name="main_drawer_list_background">#303030</color>
+    <color name="main_drawer_list_background_pressed">#0C1355</color>
+    <color name="main_drawer_list_divider">#fff</color>
+    <color name="main_drawer_counter_text_bg">#626262</color>
+    <color name="main_drawer_counter_text_color">#c5c4c4</color>
+
+
+    <color name="white_color">#fff</color>
+    <color name="orange_color">#E45A15</color>
+    <color name="home_bg_color">#0C1355</color>
+    <color name="orange_color_shadow">#B44005</color>
+
+
+    <!--<color name="colorPrimary">#3F51B5</color>-->
+    <!--<color name="colorPrimaryDark">#303F9F</color>-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+    <!--<color name="main_drawer_list_item_title">#fff</color>-->
+    <!--<color name="main_drawer_list_background">#303030</color>-->
+    <!--<color name="main_drawer_list_background_pressed">#992416</color>-->
+    <!--<color name="main_drawer_list_divider">#272727</color>-->
+    <!--<color name="main_drawer_counter_text_bg">#626262</color>-->
+    <!--<color name="main_drawer_counter_text_color">#c5c4c4</color>-->
+</resources>

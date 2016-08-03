@@ -1,0 +1,95 @@
+<resources>
+    <string name="app_name">RESA</string>
+    <!--Strings in drawer-->
+    <string name="drawer_open">Slider Menu Opened</string>
+    <string name="drawer_close">Slider Menu Closed</string>
+    <string name="Failed_Login_Info">Can not connect to Server, Hold On Please ...</string>
+    <string name="Failed_Login_empty_input">Please fill in your information and try again</string>
+    <string name="Failed_Login_wrong_email">Your email format is wrong and please try again</string>
+    <string name="Failed_Login_password_not_match">You have typed two different password, please try again</string>
+    <string name="check_message">Are you going to complete this survey ?</string>
+    <string name="sign_up_message">Quick Sign Up</string>
+    <string name="thx_message">Thanks for completing this survey ! </string>
+    <string-array name="main_drawer_items">
+        <item>Home</item>
+        <item>Personal Profile</item>
+        <item>Rewards</item>
+        <!--<item>Questions</item>-->
+        <item>About Us</item>
+    </string-array>
+    <array name="main_drawer_icons">
+        <item>@drawable/ic_home_page</item>
+        <item>@drawable/ic_personal_profile</item>
+        <item>@drawable/ic_rewards</item>
+        <!--<item>@drawable/ic_question</item>-->
+        <item>@drawable/ic_about_us</item>
+    </array>
+    <string name="desc_list_item_icon">Item Icon</string>
+    <!-- MENU TEXT -->
+    <string name="action_settings">Settings</string>
+    <string name="action_logout">Logout</string>
+
+    <!-- Fragment home TEXT -->
+    <string name="submit">Complete    Survey</string>
+    <string name="home_title">Welcome to the Touchstone survey app</string>
+    <string name="home_body">RESA strives to create a workplace for their employees to thrive.
+Completing Touchstone surveys monthly provides feedback to influence future business strategies</string>
+    <string name="name_and_position">RESA delivers programs and projects that build skills and capability in the resources sector and its supply chain.</string>
+    <string name="text_intro">If you would like to address any workplace issues, these resources may be useful: </string>
+    <string name="hr_text">RESA HR department: 08 7325 8555</string>
+    <string name="web_title_text">RESA’s Employee Assistance Plan (EAP) - weblink: </string>
+    <string name="web1_content">Lifeline:</string>
+    <string name="web1">https://www.lifeline.org.au/</string>
+    <string name="web2_content">beyondblue:</string>
+    <string name="web2">https://www.beyondblue.org.au/</string>
+    <!-- Strings related to login -->
+    <string name="prompt_email">User Email:</string>
+    <string name="user_name">Full Name</string>
+    <string name="prompt_password">User Password:</string>
+    <string name="prompt_confirm_password">Confirm your password...</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <!-- test question array-->
+    <string name="test_question">This is a Test Question</string>
+    <string-array name="question_answers">
+        <item>Strongly Disagree</item>
+        <item>Slightly Disagree</item>
+        <item>Neutral </item>
+        <item>Slightly Agree</item>
+        <item>Strongly Agree</item>
+    </string-array>
+    <string-array name="job_capacity">
+        <item>DIDO</item>
+        <item>FIFO</item>
+        <item>Local</item>
+    </string-array>
+    <string-array name="pay_type">
+        <item>Shift</item>
+        <item>Salary</item>
+    </string-array>
+    <string-array name="indigenous">
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+    <string-array name="job_classification">
+        <item>Operator or Technician</item>
+        <item>Supervisors or Managers </item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="age_group">
+        <item>Under 25</item>
+        <item>25 to 39 </item>
+        <item>40+</item>
+    </string-array>
+</resources>

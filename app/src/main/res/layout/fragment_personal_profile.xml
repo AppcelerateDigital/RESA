@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layout_edit_profile"
+    android:orientation="vertical"
+    android:background="@drawable/ic_bg_new">
+    <LinearLayout
+        android:id="@+id/edit_layout_title"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <ImageView
+            android:layout_alignParentBottom="true"
+            android:padding="@dimen/padding_left"
+            android:layout_width="@dimen/profile_ic_width"
+            android:layout_height="@dimen/profile_ic_height"
+            android:paddingBottom="0dp"
+            android:src="@drawable/ic_personal_profile" />
+        <TextView
+            android:id="@+id/text_profile"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Personal Profile"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size_title"
+            android:textColor="@color/white_color"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_profile_text_body"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit_layout_title"
+        android:layout_above="@+id/layout_profile_button_groups"
+        android:orientation="vertical"
+        android:paddingTop="25dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/layout_job_capacity"
+            style="@style/LinearLayout">
+            <LinearLayout
+                android:id="@+id/layout_text_job_capacity"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="0.5"
+                android:paddingLeft="@dimen/padding_left"
+                >
+                <TextView
+                    style="@style/TextStyle"
+                    android:text="Job Capacity"
+                    android:gravity="left"
+                    android:textColor="@color/white_color"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layout_spinner_job_capacity"
+                android:layout_toRightOf = "@+id/layout_text_job_capacity"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="0.5"
+                android:paddingRight="@dimen/padding_right">
+                <Spinner
+                    style="@style/PersonalProfileSpinnerStyle"
+                    android:id="@+id/spinner_job_capacity"
+                    android:spinnerMode="dialog"
+                    >
+                </Spinner>
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            style="@style/LinearLayout"
+            android:layout_below="@+id/layout_job_capacity"
+            android:id="@+id/layout_pay_type"
+            >
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="0.5"
+                android:id="@+id/layout_text_pay_type"
+                android:paddingLeft="@dimen/padding_left"
+                >
+
+                <TextView
+                    style="@style/TextStyle"
+                    android:text="Pay Type"
+                    android:gravity="left"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/layout_spinner_pay_type"
+                android:layout_toRightOf = "@+id/layout_text_pay_type"
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="0.5"
+                android:paddingRight="@dimen/padding_right">
+                <Spinner
+                    style="@style/PersonalProfileSpinnerStyle"
+                    android:id="@+id/spinner_pay_type"
+                    android:spinnerMode="dialog"
+                    >
+                </Spinner>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LinearLayout"
+            android:id="@+id/layout_indigenous"
+            android:layout_below="@+id/layout_pay_type">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/layout_text_indigenous"
+                android:layout_weight="0.5"
+                android:paddingLeft="@dimen/padding_left">
+                <TextView
+                    style="@style/TextStyle"
+                    android:text="Is Indigenous ?"
+                    android:gravity="left"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:id="@+id/layout_spinner_indigenous"
+                android:layout_toRightOf = "@+id/layout_text_indigenous"
+                android:layout_weight="0.5"
+                android:paddingRight="@dimen/padding_right">
+                <Spinner
+                    style="@style/PersonalProfileSpinnerStyle"
+                    android:id="@+id/spinner_is_indigenous"
+                    android:spinnerMode="dialog">
+                </Spinner>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/LinearLayout"
+            android:id="@+id/layout_gender"
+            android:layout_below="@+id/layout_indigenous">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="0.5"
+                android:id="@+id/layout_text_gender"
+                android:paddingLeft="@dimen/padding_left">
+                <TextView
+                    style="@style/TextStyle"
+                    android:text="Gender"
+                    android:gravity="left"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="0.5"
+                android:id="@+id/layout_spinner_gender"
+                android:layout_toRightOf = "@+id/layout_spinner_gender"
+                android:paddingRight="@dimen/padding_right">
+                <Spinner
+                    style="@style/PersonalProfileSpinnerStyle"
+                    android:id="@+id/spinner_gender"
+                    android:spinnerMode="dialog">
+                </Spinner>
+
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            style="@style/LinearLayout"
+            android:id="@+id/layout_age_group"
+            android:layout_below="@+id/layout_gender">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="0.5"
+                android:id="@+id/layout_text_age_group"
+                android:paddingLeft="@dimen/padding_left">
+                <TextView
+                    style="@style/TextStyle"
+                    android:text="Age Group"
+                    android:gravity="left"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="0.5"
+                android:id="@+id/layout_spinner_age_group"
+                android:layout_toRightOf = "@+id/layout_text_age_group"
+                android:paddingRight="@dimen/padding_right">
+                <Spinner
+                    style="@style/PersonalProfileSpinnerStyle"
+                    android:id="@+id/spinner_age_group"
+                    android:spinnerMode="dialog">
+                </Spinner>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            style="@style/LinearLayout"
+            android:id="@+id/layout_job_classification"
+            android:layout_below="@+id/layout_age_group">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_weight="0.5"
+                android:id="@+id/layout_text_job_classification"
+                android:paddingLeft="@dimen/padding_left">
+                <TextView
+                    style="@style/TextStyle"
+                    android:text="Job Classification"
+                    android:gravity="left"
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:layout_marginBottom="20dp"
+                android:id="@+id/layout_spinner_job_classification"
+                android:layout_toRightOf = "@+id/layout_text_job_classification"
+                android:layout_weight="0.5"
+                android:paddingRight="@dimen/padding_right">
+                <Spinner
+                    style="@style/PersonalProfileSpinnerStyle"
+                    android:id="@+id/spinner_job_classification"
+                    android:spinnerMode="dialog">
+                </Spinner>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_profile_button_groups"
+        android:layout_above="@+id/edit_image_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|bottom"
+        android:orientation="horizontal"
+        android:padding="20dp">
+        <Button
+            style="@style/PersonalProfileButtonStyle"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/buttonshape"
+            android:id="@+id/btn_back_to_edit"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Back"
+            />
+
+        <Button
+            style="@style/PersonalProfileButtonStyle"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:background="@drawable/buttonshape"
+            android:id="@+id/btn_update_info"
+            android:layout_toRightOf = "@+id/btn_update_info"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Update"
+            />
+    </LinearLayout>
+    <ImageView
+        android:id="@+id/edit_image_logo"
+        android:background="@color/white_color"
+        android:layout_alignParentBottom="true"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:src="@drawable/ic_resa_logo" />
+</RelativeLayout>
+

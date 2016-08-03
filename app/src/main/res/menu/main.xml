@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menus"
+    android:actionProviderClass="@android:style/Widget.Holo.ActionButton.Overflow"
+    android:icon="@drawable/ic_home">
+    <item
+        android:id="@+id/logout"
+        android:orderInCategory="100"
+        android:title="logout"/>
+</menu>
